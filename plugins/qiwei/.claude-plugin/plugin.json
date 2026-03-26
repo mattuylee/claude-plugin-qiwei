@@ -1,0 +1,7 @@
+{
+  "name": "qiwei",
+  "description": "WeCom (企业微信) channel for Claude Code — bridge WeCom self-built app messages to Claude Code",
+  "version": "0.1.0",
+  "keywords": ["qiwei", "wecom", "enterprise-wechat", "messaging", "channel", "mcp"],
+  "license": "MIT"
+}

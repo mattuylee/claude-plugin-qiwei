@@ -1,0 +1,17 @@
+{
+  "name": "claude-plugin-qiwei",
+  "owner": {
+    "name": "mattuylee"
+  },
+  "metadata": {
+    "description": "WeCom (企业微信) channel plugin for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "qiwei",
+      "description": "WeCom (企业微信) channel for Claude Code — bridge WeCom self-built app messages to Claude Code",
+      "source": "./plugins/qiwei",
+      "category": "messaging"
+    }
+  ]
+}
