@@ -46,9 +46,8 @@ export function startCallbackServer(
     async fetch(req) {
       const url = new URL(req.url);
 
-      // 只处理根路径
-      if (url.pathname !== "/" && url.pathname !== "/callback") {
-        return new Response("Not Found", { status: 404 });
+      if (url.pathname !== "/callback") {
+        return new Response("Forbidden", { status: 403 });
       }
 
       const msgSignature = url.searchParams.get("msg_signature") || "";
