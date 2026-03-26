@@ -112,11 +112,10 @@ claude --dangerously-load-development-channels plugin:qiwei@claude-plugin-qiwei
 
 ## Known Limitations
 
-- 企微文本消息限制 2048 字节，超长消息暂未做分段
+- 超长文本消息会自动分段发送（优先从换行符处分段）
 - 临时素材有效期 3 天，过期后无法下载
 - 语音识别需在企微后台开启，否则只能获取 media_id
-
-详见 [ISSUES.md](plugins/qiwei/ISSUES.md)。
+- 回调服务仅接受 `/callback` 路径，其他路径返回 403
 
 ## License
 
